@@ -1,0 +1,16 @@
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\config\RestConfig.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\exceptions\GlobalExceptionMapper.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\exceptions\LinkedResourceNotFoundException.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\exceptions\LinkedResourceNotFoundMapper.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\exceptions\RoomNotEmptyException.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\exceptions\RoomNotEmptyMapper.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\exceptions\SensorUnavailableException.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\exceptions\SensorUnavailableMapper.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\filters\CustomLogger.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\models\Room.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\models\Sensor.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\models\SensorReading.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\resources\DiscoveryResource.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\resources\RoomResource.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\resources\SensorReadingResource.java
+C:\Users\User\Documents\NetBeansProjects\SmartCampusAPI\src\main\java\com\westminster\resources\SensorResource.java

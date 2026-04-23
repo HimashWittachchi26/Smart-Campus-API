@@ -1,0 +1,16 @@
+com\westminster\resources\SensorReadingResource.class
+com\westminster\exceptions\LinkedResourceNotFoundException.class
+com\westminster\resources\DiscoveryResource.class
+com\westminster\exceptions\LinkedResourceNotFoundMapper.class
+com\westminster\models\SensorReading.class
+com\westminster\filters\CustomLogger.class
+com\westminster\resources\RoomResource.class
+com\westminster\exceptions\SensorUnavailableException.class
+com\westminster\exceptions\GlobalExceptionMapper.class
+com\westminster\exceptions\RoomNotEmptyMapper.class
+com\westminster\models\Room.class
+com\westminster\models\Sensor.class
+com\westminster\resources\SensorResource.class
+com\westminster\exceptions\RoomNotEmptyException.class
+com\westminster\exceptions\SensorUnavailableMapper.class
+com\westminster\config\RestConfig.class

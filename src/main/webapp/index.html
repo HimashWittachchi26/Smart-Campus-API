@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus API</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 700px;
+            width: 90%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #22c55e;
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 15px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .info-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .info-card .label {
+            color: #94a3b8;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .info-card .value {
+            color: #1e293b;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: #1e293b;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .endpoint-list {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .endpoint-list li {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            font-size: 14px;
+        }
+
+        .method {
+            font-weight: bold;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 12px;
+            min-width: 52px;
+            text-align: center;
+        }
+
+        .get    { background: #dcfce7; color: #16a34a; }
+        .post   { background: #dbeafe; color: #2563eb; }
+        .delete { background: #fee2e2; color: #dc2626; }
+
+        .url { color: #475569; font-family: monospace; }
+
+        .try-btn {
+            display: block;
+            text-align: center;
+            background: #2563eb;
+            color: white;
+            padding: 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .try-btn:hover { background: #1d4ed8; }
+
+        .footer {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 13px;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="status-badge">● Server Running</div>
+            <h1>Smart Campus API</h1>
+            <p class="subtitle">Client Server Architecture - 5COSC022W</p>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="label">Version</div>
+                <div class="value">v1.0</div>
+            </div>
+            <div class="info-card">
+                <div class="label">Status</div>
+                <div class="value" style="color:#22c55e">Operational</div>
+            </div>
+            <div class="info-card">
+                <div class="label">Technology</div>
+                <div class="value">JAX-RS / Jakarta EE 10</div>
+            </div>
+            <div class="info-card">
+                <div class="label">Server</div>
+                <div class="value">GlassFish 7</div>
+            </div>
+        </div>
+
+        <p class="section-title">Available Endpoints</p>
+
+        <ul class="endpoint-list">
+            <li>
+                <span class="method get">GET</span>
+                <span class="url">/api/v1/discovery</span>
+            </li>
+            <li>
+                <span class="method get">GET</span>
+                <span class="url">/api/v1/rooms</span>
+            </li>
+            <li>
+                <span class="method post">POST</span>
+                <span class="url">/api/v1/rooms</span>
+            </li>
+            <li>
+                <span class="method get">GET</span>
+                <span class="url">/api/v1/rooms/{id}</span>
+            </li>
+            <li>
+                <span class="method delete">DELETE</span>
+                <span class="url">/api/v1/rooms/{id}</span>
+            </li>
+            <li>
+                <span class="method get">GET</span>
+                <span class="url">/api/v1/sensors</span>
+            </li>
+            <li>
+                <span class="method get">GET</span>
+                <span class="url">/api/v1/sensors?type={type}</span>
+            </li>
+            <li>
+                <span class="method post">POST</span>
+                <span class="url">/api/v1/sensors</span>
+            </li>
+            <li>
+                <span class="method get">GET</span>
+                <span class="url">/api/v1/sensors/{id}/readings</span>
+            </li>
+            <li>
+                <span class="method post">POST</span>
+                <span class="url">/api/v1/sensors/{id}/readings</span>
+            </li>
+        </ul>
+
+        <a class="try-btn" href="http://localhost:8080/SmartCampusAPI/api/v1/discovery" target="_blank">
+            View Discovery Endpoint →
+        </a>
+
+        <p class="footer">
+            Client Server Architecture Coursework - Project "Smart Campus API"<br>
+            Developer : Nithma Himash Wittachchi <br>
+            nithmahimash26@gmail.com
+        </p>
+
+    </div>
+</body>
+</html>
